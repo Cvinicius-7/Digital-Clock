@@ -30,7 +30,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-   backdrop-filter: blur(40px);
+    backdrop-filter: blur(40px);
     border-radius: 5px;
     position: relative;
     z-index: 2;
@@ -48,6 +48,7 @@
     top: -50px;
     z-index: 1;
 }
+
 .container::after {
     content: "";
     width: 180px;
@@ -59,33 +60,38 @@
     bottom: -50px;
     z-index: 1;
 }
+
 .clock span {
     font-size: 100px;
-    font-weight:100;
-    width: 110px;   
+    font-weight: 100;
+    width: 110px;
     display: inline-block;
     text-align: center;
     position: relative;
-    
+
 }
-.clock span::after{
+
+.clock span::after {
     font-size: 16px;
     position: absolute;
     bottom: -5px;
     left: 50%;
     transform: translateX(-50%);
 }
-#hours::after{
+
+#hours::after {
     content: "HORAS";
     font-weight: bold;
-    
+
 }
-#minutes::after{
+
+#minutes::after {
     content: "MINUTOS";
     font-weight: bold;
 }
-#seconds::after{
+
+#seconds::after {
     content: "SEGUNDOS";
     font-weight: bold;
-    
+
 }
