@@ -9,6 +9,6 @@
 </ul>
 <h1>How to use</h1>
 <p>To use the clock is very simple, just acess the website below and you can just start to have updated hours every second !</p>
-
+<p> https://cvinicius-7.github.io/Digital-Clock/ </p>
 <h1>License</h1>
 <p>This project is licensed under the MIT License - see the LICENSE.md file for details.</p>
