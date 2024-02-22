@@ -14,7 +14,7 @@
     position: relative;
 }
 
-.container{
+.container {
     width: 800px;
     height: 180px;
     position: absolute;
@@ -22,7 +22,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.clock{
+
+.clock {
     width: 100%;
     height: 100%;
     background: rgba(235, 0, 255, 0.11);
@@ -30,14 +31,26 @@
     align-items: center;
     justify-content: center;
 }
-.container::before{
+
+.container::before {
     content: "";
     width: 180px;
-    height: 180px; 
+    height: 180px;
     background: #f41b75;
     border-radius: 5px;
-    position: relative;
+    position: absolute;
     left: -50px;
-    top: -50px; 
+    top: -50px;
+    z-index: 1;
+}
+.container::after {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background: #419aff;
+    border-radius: 50%;
+    position: absolute;
+    right: -30px;
+    bottom: -50px;
     z-index: 1;
 }
