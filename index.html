@@ -1,12 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital clock</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    
+    <div class="hero">
+        <div class="container">
+            <div class="clock">
+                <span id="hours">00</span>
+                <span>:</span>
+                <span id="minutes">00</span>
+                <span>:</span>
+                <span id="seconds">00</span>
+            </div>
+        </div>
+
+    </div>
 </body>
+<script>
+    let hours = document.getElementById('hours');
+    let minutes = document.getElementById('minutes');
+    let seconds = document.getElementById('seconds');
+
+    setInterval(() => {
+        let current = new Date();
+
+        hours.innerHTML = (current.getHours() < 10 ? "0" : 0) + current.getHours();
+        minutes.innerHTML = (current.getMinutes() < 10 ? "0" : 0) + current.getMinutes();
+        seconds.innerHTML = (current.getSeconds() < 10 ? "0" : 0) + current.getSeconds();
+
+    }, 1000);
+
+
+</script>
+
 </html>
