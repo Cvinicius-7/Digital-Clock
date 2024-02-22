@@ -27,9 +27,16 @@
     let minutes = document.getElementById('minutes');
     let seconds = document.getElementById('seconds');
 
-    let current = new Date();
+    setInterval(()=>{
+        let current = new Date();
 
-    
+    hours.innerHTML = current.getHours();
+    minutes.innerHTML = current.getMinutes();
+    seconds.innerHTML = current.getSeconds();
+
+    }, 1000);
+
+
 </script>
 
 </html>
