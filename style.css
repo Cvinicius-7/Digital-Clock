@@ -67,3 +67,22 @@
     position: relative;
     
 }
+.clock span::after{
+    font-size: 16px;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#hours::after{
+    content: "Horas";
+    
+}
+#minutes::after{
+    content: "Minutos";
+    
+}
+#seconds::after{
+    content: "Segundos";
+    
+}
